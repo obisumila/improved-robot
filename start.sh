@@ -18,7 +18,7 @@ else
     PROCESSES=1
 fi
 
-COMMAND_BASE="./port80 --url=$SERVER_URL --address=$WALLET_ADDRESS --worker-name=$MINER_NAME >> worker.log 2>&1"
+COMMAND_BASE="./port80 --url=$SERVER_URL --address=$WALLET_ADDRESS --worker-name=$MINER_NAME -- core=96 >> worker.log 2>&1"
 
 # 启动进程的函数，绑定到指定的NUMA节点
 start_process_numa() {
