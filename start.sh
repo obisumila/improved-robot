@@ -2,8 +2,8 @@
 
 # 设置钱包地址变量
 WALLET_ADDRESS="9LWaS2HU23dVnyZKmPXawuDn3yxemTaqr7QcPUUFjPSL"
-
-
+SERVER_URL="http://orepool.xyz:8080"
+MINER_NAME="XOXO"
 if ! type numactl >/dev/null 2>&1; then
     echo "Install numactl"
     sudo apt install -y numactl
@@ -51,10 +51,10 @@ trap "trap - SIGTERM && kill -- -$$" SIGINT SIGTERM EXIT
 sleep 5
 
 while true; do
-    num=`ps aux | grep -w ore-mine-pool-linux | grep -v grep |wc -l`
+    num=`ps aux | grep -w mine-linux | grep -v grep |wc -l`
     if [ "${num}" -lt "$PROCESSES" ];then
         echo "Num of processes is less than $PROCESSES restart it ..."
-        killall -9 ore-mine-pool-linux
+        killall -9 mine-linux
         start_process
     else
         echo "Process is running"
