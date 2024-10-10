@@ -1,0 +1,34 @@
+{
+  "list": [
+    {
+      "key": "public",
+      "server_list": [
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/"
+      ]
+    },{
+      "key": "stake",
+      "server_list": [
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/"
+      ]
+    }
+  ,{
+      "key": "public&stake",
+      "server_list": [
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/",
+        "http://orepool.xyz:8080/"
+      ]
+    }
+  ]
+}
